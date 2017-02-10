@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Js</title>
+    
+    <style>
+    
+    </style>
+  </head>
+    
+    
+<body>
+    <h1>JAVA TASK string</h1>
+    <h3>LENGTH OF STRING </h3>
+    <li id="p1">hello how are you</li>
+    <p id="text1"></p>
+    <h3>LOCATION OF HOW
+    <li id="p2">how am i now</li>
+    <p id="text2"></p>
+    <h3>SLICING</h3>
+    
+    
+    <li id="p3">Apple,Bannana,Grapes</li>
+    <p id="text3"></p>
+    <h3>SUBSTRING</h3>
+    <li id="p4">We are from KIET</li>
+    <p id="text4"></p>
+    <h3> REPLACE</h3>
+    <li id="p5">hello how are you now</li>
+    <p id="text5"></p>
+      <h3> TEXT FROM LOWER TO UPPER CASE</h3>
+    <li id="p6">how am i then</li>
+    <p id="text6"></p>
+    <h3> TEXT FFRO UPPER CASE TO LOWER CASE</h3>
+     <li id="p7">HOW AM I NOW</li>
+    <p id="text7"></p>
+       <h3> CONCATE TWO WORDS</h3>
+       <li id="p8">The two words are kietians and rocks </li>
+     <p id="text8"></p>
+        <h3>CHAR AT </h3>
+        <li id="p9"> kiet coders</li>
+     <p id="text9"></p>
+       <h3>CHAR CODE AT</h3> 
+          <li id="p10"> HELLO WORLD </li>
+     <p id="text10"></p>
+       
+  
+      
+
+
+
+
+    
+    
+    <script type="text/javascript"> 
+        
+        var str = document.getElementById("p1").innerHTML;
+        document.getElementById("text1").innerHTML = str.length;
+        
+        var str1 = document.getElementById("p2").innerHTML;
+    var pos = str1.search("how");
+    document.getElementById("text2").innerHTML = pos;
+        
+        var str = "Apple, Banana, Grapes";
+        document.getElementById("text3").innerHTML = str.slice(7,13);
+        
+        var str = "We are from KIET";
+        document.getElementById("text4").innerHTML = str.substring(5,7);
+        
+        var str = document.getElementById("p5").innerHTML; 
+    var txt = str.replace("now","all");
+    document.getElementById("text5").innerHTML = txt;
+        
+         var text = document.getElementById("p6").innerHTML;
+    document.getElementById("text6").innerHTML = text.toUpperCase();
+        
+         var text = document.getElementById("p7").innerHTML;
+    document.getElementById("text7").innerHTML = text.toLowerCase();
+        
+        var text1 = "KIETIANS";
+var text2 = "ROCKS";
+document.getElementById("text8").innerHTML = text1.concat(" ", text2);
+
+      var str = "kiet coders ";
+document.getElementById("text9").innerHTML = str.charAt(5);  
+        
+      var str = "HELLO WORLD";
+document.getElementById("text10").innerHTML = str.charCodeAt(3);  
+        
+        
+</script>
+ 
+        
+        
+    
+        </script>
+</body>
+</html>

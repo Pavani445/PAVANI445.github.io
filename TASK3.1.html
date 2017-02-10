@@ -1,0 +1,39 @@
+﻿<html>
+<head>  
+<style type="text/css">
+body{
+        background-color:pink;
+        
+     }
+</style>
+</head>
+<body>
+<h1 align="center">JAVA TASKS</h1>
+<h1 id="heading"></h1>
+
+<input type="text" id="myinput" value="" onchange="displaytext()" />
+<form>
+    <input type="checkbox" id="bk" name="vehicle" value="Bike">I have a bike<br></br>
+    <input type="checkbox" id="cr" name="vehicle" value="Car">I have a car<br></br> 
+    <input type="checkbox" id="sc" name="vehicle" value="Scooter">I have a scooter<br></br>
+    <input type="submit" value="   Print   " size="30" onClick="return checkbox();">
+</form>
+<script type="text/javascript">
+function displaytext(){
+    var inputelem = document.getElementById('myinput');
+    var elem = document.getElementById('heading');
+    elem.innerHTML = inputelem.value;
+}
+function checkbox()
+{
+    var bk=document.getElementById("bk").checked;
+    var cer=document.getElementById("cr").checked;
+    var sc=document.getElementById("sc").checked;
+    if(bk) document.writeln(" I have a Bike");
+    if(cr) document.write(" I have a  Car"); 
+    if(sc) document.writeln(" I have scooter");  
+return false;  
+}  
+</script>
+</body>
+</html>
