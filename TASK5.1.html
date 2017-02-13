@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>DATES FORMAT</h1>
+<li>NORMAL DATE FORMAT</li>
+<p id="demo"></p>
+</li>THE DATE FORMAT IS YEAR,MONTH,DATE,HOUR,MINUTE,SECONDS </li>
+<p id="demo1"></p>
+<li> USING TO STRING</li>
+<p id="demo2"></p>
+<li>USING TO DATE STRING</li>
+<p id="demo3"></p>
+<li>TO GET TIME </li>
+<p id="demo4"></p>
+<li> TO GET YEAR </li>
+<p id="demo5"></p>
+<li> TO GET MILLISECONDS </li>
+<p id="demo6"></p>
+<li>TO GET DATE USING MILLISECOND</li>
+<p id="demo7"></p>
+<li> TO GET HOUR </li>
+<p id ="demo8"></p>
+<li> TO GET MINUTES </li>
+<p id ="demo9"></p>
+<li> TO GET SECONDS </li>
+<p id ="demo10"></p>
+<script type"text/javascript">
+document.getElementById("demo").innerHTML =  Date();
+
+
+var d1 = new Date(99,5,24,11,33,30,0);
+document.getElementById("demo1").innerHTML = d1;
+
+
+
+
+var d2 = new Date();
+document.getElementById("demo2").innerHTML = d2.toString();
+
+
+
+
+var d3 = new Date();
+document.getElementById("demo3").innerHTML = d3.toDateString();
+
+
+
+
+
+var d4 = new Date();
+document.getElementById("demo4").innerHTML = d4.getTime();
+
+var d5 = new Date();
+document.getElementById("demo5").innerHTML = d5.getFullYear();
+
+
+
+var msec = Date.parse("March 21, 2012");
+document.getElementById("demo6").innerHTML = msec;
+
+
+
+var msec = Date.parse("March 21, 2012");
+var d6 = new Date(msec);
+document.getElementById("demo7").innerHTML = d6;
+
+var d7 = new Date();
+document.getElementById("demo8").innerHTML = d7.getHours();
+
+var d8 = new Date();
+document.getElementById("demo9").innerHTML = d8.getMinutes();
+
+var d9 = new Date();
+document.getElementById("demo10").innerHTML = d9.getSeconds();
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
